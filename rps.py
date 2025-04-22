@@ -13,7 +13,7 @@ while True:
 
     # Get user input
     console.print("Please enter your choice (1, 2, or 3): ", end="", style="bold blue")
-    user_choice_numeric = input()
+    user_choice_numeric = input().strip()
 
     if user_choice_numeric not in ["1", "2", "3"]:
         os.system("cls||clear")
@@ -54,7 +54,7 @@ while True:
 
     time.sleep(2)
     console.print("Would you like to try again? (yes/no): ", end="", style="bold blue")
-    play_again = input().lower()
+    play_again = input().strip().lower()
 
     if play_again == "yes":
         os.system("cls||clear")
